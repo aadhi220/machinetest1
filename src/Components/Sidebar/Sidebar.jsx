@@ -1,11 +1,11 @@
 import React from "react";
 import "./sidebar.css";
 import dashboardIcon from "../../assets/sidebar/dashboard.png";
-import perksIcon from '../../assets/sidebar/plant-pot.png'
-import addonIcon from '../../assets/sidebar/jigsaw.png'
-import faqIcon from '../../assets/sidebar/faq.png'
-import serviceIcon from '../../assets/sidebar/customer-service.png'
-import logoutIcon from '../../assets/sidebar/power-on.png'
+import perksIcon from "../../assets/sidebar/plant-pot.png";
+import addonIcon from "../../assets/sidebar/jigsaw.png";
+import faqIcon from "../../assets/sidebar/faq.png";
+import serviceIcon from "../../assets/sidebar/customer-service.png";
+import logoutIcon from "../../assets/sidebar/power-on.png";
 const ProfileBox = ({ name, email }) => {
   return (
     <div className="profile-box">
@@ -52,7 +52,12 @@ export default function Sidebar() {
         </button>
       </div>
 
-     <div className="logout-div"> <button className="logout-btn">LogOut <img  style={{ width: "20px" }} src={logoutIcon} alt="" /></button></div>
+      <div className="logout-div">
+        {" "}
+        <button className="logout-btn">
+          LogOut <img style={{ width: "20px" }} src={logoutIcon} alt="" />
+        </button>
+      </div>
     </div>
   );
 }
