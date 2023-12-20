@@ -1,15 +1,22 @@
 import React from "react";
 import "./SpecialCard.css";
-export default function SpecialCards({name,color,badge}) {
+export default function SpecialCards({ name, color, badge }) {
   return (
     <>
       <div className="special-card">
         <div className="flex">
-          <button style={{backgroundColor:color}} className="badge">{badge}</button>
+          <button style={{ backgroundColor: color }} className="badge">
+            {badge}
+          </button>
           <h1 className="plan-name">{name}</h1>
-          <span className="special-regular-price">Lorem ipsum dolor, sit amet consectetur</span>
-         
-          <button style={{backgroundColor:color}} className="special-plan-btn">
+          <span className="special-regular-price">
+            Lorem ipsum dolor, sit amet consectetur
+          </span>
+
+          <button
+            style={{ backgroundColor: color }}
+            className="special-plan-btn"
+          >
             Get Started <i className="fa-solid fa-arrow-right"></i>{" "}
           </button>
         </div>
@@ -33,9 +40,9 @@ export default function SpecialCards({name,color,badge}) {
             <i className="fa-regular fa-envelope fa-2xs"></i>Email Support
           </span>
           <span className="special-features">
-            <i className="fa-regular fa-envelope fa-2xs"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <i className="fa-regular fa-envelope fa-2xs"></i>Lorem ipsum dolor
+            sit amet consectetur adipisicing elit.
           </span>
-         
         </div>
       </div>
     </>

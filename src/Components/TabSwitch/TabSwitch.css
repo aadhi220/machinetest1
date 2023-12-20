@@ -1,90 +1,72 @@
 .switch-container {
-    position: relative;
-    display: inline-block;
-    width: 260px;
-    height: 35px;
-    border: 1px solid black;
-    border-radius: 5rem;
-  }
-  
-  .switch-text {
-    position:absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    align-items: center;
-  }
-  
-  .switch-container >input {
-    opacity: 0;
-    width: 0;
-    height: 0;   
-  }
-  
-  .slider{
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    
-  }
-  
-  .slider::before{
-    position:absolute;
-    content: "";
-    border-radius: 5rem;
-    
-    width: 130px;
-    height: 25px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #7fb5e87c;
-    transition: .4s;
-  }
-  
-  input:checked + .slider::before {
-    transform: translateX(120px);
-    
-  }
-
-
-  
-@media only screen and (max-width: 767px) {
-.switch-container{
-  width: 200px;
-  height: 30px;
+  position: relative;
+  display: inline-block;
+  width: 260px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 5rem;
 }
 
-.switch-text{
-  padding: 0 1.5rem;
+.switch-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.slider::before{
-  width: 100px;
-  height: 20px;
+.switch-container > input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  border-radius: 5rem;
+
+  width: 130px;
+  height: 25px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #7fb5e87c;
+  transition: 0.4s;
+}
+
 input:checked + .slider::before {
-  transform: translateX(90px);
-  
+  transform: translateX(120px);
 }
 
+@media only screen and (max-width: 767px) {
+  .switch-container {
+    width: 200px;
+    height: 30px;
+  }
 
-}
+  .switch-text {
+    padding: 0 1.5rem;
+  }
 
-/* For screens with a minimum width of 768px (typical for tablets) and a maximum width of 1023px */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-
-}
-
-/* For screens with a minimum width of 1024px (typical for larger screens) */
-@media only screen and (min-width: 1024px) {
-
+  .slider::before {
+    width: 100px;
+    height: 20px;
+  }
+  input:checked + .slider::before {
+    transform: translateX(90px);
+  }
 }

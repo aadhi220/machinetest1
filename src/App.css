@@ -34,7 +34,6 @@
   justify-content: flex-start;
   padding: 2rem 3rem;
   margin-left: 178px;
-  
 
   background-color: white;
 }
@@ -44,15 +43,13 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .toggle-box {
-
   padding-top: 3rem;
 }
 
-.planCard-collection{
+.planCard-collection {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -63,11 +60,9 @@
   justify-content: space-between;
   margin-top: 3rem;
   gap: 3rem;
+}
 
-
-} 
-
-.right-sidebar{
+.right-sidebar {
   position: fixed;
   z-index: 99;
   right: 0;
@@ -75,141 +70,111 @@
   width: 2rem;
   background-color: #ffffff;
   box-shadow: 2px 2px 10px rgba(95, 94, 94, 0.2);
-  border-top-left-radius:8px ;
+  border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 
-  display: flex ;
+  display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-
-.icon-3{
-  top:90% ;
-  right: .5%;
+.icon-3 {
+  top: 90%;
+  right: 0.5%;
   height: 3rem;
   width: 3rem;
   border-radius: 180px;
-overflow: hidden;
+  overflow: hidden;
 }
 
-.icon-3>img{
+.icon-3 > img {
   width: 100%;
   object-fit: cover;
-  transform: scale(.7);
-
+  transform: scale(0.7);
 }
 
 .icon-2 {
-  top:68%;
-width:2rem;
-height: 7rem;
+  top: 68%;
+  width: 2rem;
+  height: 7rem;
 }
 
 .icon-1 {
-  top:15%;
+  top: 15%;
   width: 2.5rem;
   height: 3rem;
   overflow: hidden;
- 
 }
 
-.icon-1>img{
+.icon-1 > img {
   width: 60px;
   object-fit: cover;
   object-position: center;
-  
 }
 
-
-
-
 @media only screen and (max-width: 767px) {
-  .head{
-flex-direction: column;
-
+  .head {
+    flex-direction: column;
   }
-  .head-text{
+  .head-text {
     font-size: 1rem;
   }
 
-
-  .app{
+  .app {
     padding: 0;
-
   }
   .content {
-    margin-left: 2rem; 
-    padding: 1rem; 
+    margin-left: 2rem;
+    padding: 1rem;
   }
   .planCard-collection {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .toggle-box {
-    padding-top: 1rem; 
+    padding-top: 1rem;
   }
 
   .right-sidebar {
-    display: none; 
+    display: none;
   }
 
   .special-card-section {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     margin-top: 1rem;
-  } 
+  }
 }
 
 /* For screens with a minimum width of 768px (typical for tablets) and a maximum width of 1023px */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .head-text {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
-  .head{
+  .head {
     flex-direction: column;
-    
-      }
+  }
 
-      
-.toggle-box {
+  .toggle-box {
+    padding-top: 2rem;
+  }
 
-  padding-top: 2rem;
-}
- 
   .planCard-collection {
- flex-wrap: wrap;
- align-items: center;
- justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
   }
 
   .content {
-    margin-left: 3rem; 
-    padding: 1rem; 
+    margin-left: 3rem;
+    padding: 1rem;
   }
 
   .special-card-section {
     flex-direction: column;
-    align-items: center; 
-  }
-}
-
-/* For screens with a minimum width of 1024px (typical for larger screens) */
-@media only screen and (min-width: 1024px) {
-  .head {
-    padding: 1rem 3rem; 
-   
-  }
-
-  .planCard-collection {
-    margin-top: 2rem; 
-  }
-
-  .special-card-section {
-    margin-top: 4rem; 
+    align-items: center;
   }
 }

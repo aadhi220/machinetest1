@@ -54,8 +54,6 @@
   padding: 0.8rem 1rem;
   border-radius: 0rem 0.5rem 0.5rem 0rem;
   border: 1px solid rgba(0, 0, 0, 0.119);
-
-  
 }
 
 .sidebar-btn:focus {
@@ -72,12 +70,11 @@
   font-weight: 500;
 }
 
-
 .logout-btn {
   width: 100%;
-position: fixed;
-width: 178px;
-bottom: 0px;
+  position: fixed;
+  width: 178px;
+  bottom: 0px;
 
   display: flex;
   justify-content: center;
@@ -100,87 +97,75 @@ bottom: 0px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-
 @media only screen and (max-width: 767px) {
-
-  .profile-name{
+  .profile-name {
     display: none;
-
   }
-  .profile-email{
+  .profile-email {
     display: none;
   }
 
-  .profile-box-img{
+  .profile-box-img {
     width: 40px;
     height: 40px;
   }
 
-  .profile-box{
-height: 100px;
+  .profile-box {
+    height: 100px;
   }
 
-  .sidebar-btn>span{
+  .sidebar-btn > span {
     display: none;
-
   }
 
-  .sidebar{
+  .sidebar {
     width: fit-content;
     /* display: none; */
   }
 
-  .logout-btn>span{
+  .logout-btn > span {
     display: none;
   }
 
-  .logout-btn{
+  .logout-btn {
     width: fit-content;
     background-color: #f5f7f7;
-    
   }
 }
-/* For screens with a minimum width of 768px (typical for tablets) and a maximum width of 1023px */
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .profile-name{
-    display: none;
-
-  }
-  .profile-email{
+  .profile-name {
     display: none;
   }
+  .profile-email {
+    display: none;
+  }
 
-  .profile-box-img{
+  .profile-box-img {
     width: 40px;
     height: 40px;
   }
 
-  .profile-box{
-height: 100px;
+  .profile-box {
+    height: 100px;
   }
 
-  .sidebar-btn>span{
+  .sidebar-btn > span {
     display: none;
-
   }
 
-  .sidebar{
+  .sidebar {
     width: fit-content;
     /* display: none; */
   }
 
-  .logout-btn>span{
+  .logout-btn > span {
     display: none;
   }
 
-  .logout-btn{
+  .logout-btn {
     width: fit-content;
     background-color: #f5f7f7;
-    
   }
 }
 
-/* For screens with a minimum width of 1024px (typical for larger screens) */
-@media only screen and (min-width: 1024px) {
-
-}
