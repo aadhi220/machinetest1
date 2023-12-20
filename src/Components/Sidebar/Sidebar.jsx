@@ -52,12 +52,9 @@ export default function Sidebar() {
         </button>
       </div>
 
-      <div className="logout-div">
-        {" "}
-        <button className="logout-btn">
-          LogOut <img style={{ width: "20px" }} src={logoutIcon} alt="" />
+      <button className="logout-btn">
+       <span>   LogOut</span> <img style={{ width: "20px" }} src={logoutIcon} alt="" />
         </button>
-      </div>
     </div>
   );
 }

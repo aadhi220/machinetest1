@@ -1,13 +1,13 @@
 import React from "react";
 import "./PlanCard.css";
-export default function PlanCards() {
+export default function PlanCards({name,color,regularPrice,offerPrice}) {
   return (
     <>
       <div className="card">
-        <h1>Basic</h1>
-        <span className="regular-price">$ 89.99/mo</span>
-        <span className="offer-price">$9.99/mo</span>
-        <button className="plan-btn">
+        <h1>{name}</h1>
+        <span className="regular-price">$ {regularPrice}</span>
+        <span className="offer-price">{offerPrice}</span>
+        <button style={{backgroundColor:color}} className="plan-btn">
           Get Started <i className="fa-solid fa-arrow-right"></i>{" "}
         </button>
         <hr style={{ width: "100%", opacity:'.8' }} />

@@ -54,3 +54,37 @@
     transform: translateX(120px);
     
   }
+
+
+  
+@media only screen and (max-width: 767px) {
+.switch-container{
+  width: 200px;
+  height: 30px;
+}
+
+.switch-text{
+  padding: 0 1.5rem;
+}
+
+.slider::before{
+  width: 100px;
+  height: 20px;
+}
+input:checked + .slider::before {
+  transform: translateX(90px);
+  
+}
+
+
+}
+
+/* For screens with a minimum width of 768px (typical for tablets) and a maximum width of 1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* For screens with a minimum width of 1024px (typical for larger screens) */
+@media only screen and (min-width: 1024px) {
+
+}
