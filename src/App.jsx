@@ -4,6 +4,8 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import { TabSwitch } from "./Components/TabSwitch/TabSwitch";
+import PlanCards from "./Components/PlanCards/PlanCards";
+import SpecialCards from "./Components/SpecialCards/SpecialCards";
 
 
 
@@ -20,13 +22,22 @@ export default function App() {
               <h1 className="head-text">
                 Choose a plan that's just right for you !
               </h1>
-              <div>
+              <div className="toggle-box">
             <TabSwitch/>
               </div>
             </div>
-            <div className="planCard-collection"></div>
+            <div className="planCard-collection">
 
-            <div className="special-card-section"></div>
+              <PlanCards/>
+              <PlanCards/>
+              <PlanCards/>
+            </div>
+
+            <div className="special-card-section">
+
+              <SpecialCards/>
+              <SpecialCards/>
+            </div>
           </div>
         </div>
 

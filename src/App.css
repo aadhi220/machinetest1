@@ -9,10 +9,10 @@
 
 .app {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #e3f1fe;
   transition: 0.2s ease-in-out;
-  overflow: hidden;
+
   padding-right: 3rem;
 }
 
@@ -29,7 +29,7 @@
   z-index: 1;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 3rem 3rem;
+  padding: 0rem 3rem;
   
 
   background-color: white;
@@ -40,5 +40,27 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+
 }
+
+.toggle-box {
+
+  padding-top: 3rem;
+}
+
+.planCard-collection{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+.special-card-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 3rem;
+
+
+} 
+
 
